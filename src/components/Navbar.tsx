@@ -3,18 +3,20 @@
 
 import { Menu } from "@carbon/icons-react";
 import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="block w-full border-gray-200 fixed top-0 m-5">
       <div className="mx-5 rounded-lg bg-white max-w-screen-xl flex flex-wrap items-center justify-between px-4 py-3 md:py-0">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
             KeyLet
           </span> */}
-          <img className="h-10" src="/keylet.png" alt="keylet logo" />
-        </a>
+          <Image className="h-10" src="/keylet.png" alt="keylet logo" />
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -32,37 +34,37 @@ export default function Navbar() {
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 my-2 md:flex-row md:space-x-8">
             <li>
-              <a
+              <Link
                 href="#"
                 className="block py-2 px-3 text-gray-900 active"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="block py-2 px-3 text-gray-900"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="block py-2 px-3 text-gray-900"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#"
                 className="block py-2 px-3 text-gray-900"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
