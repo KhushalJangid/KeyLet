@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "Sea-facing Villa",
+    "price": 4500000,
+    "location": "Mansarovar, Jaipur",
+    "description": "A beautiful villa near the beach.",
+    "media": ["/media/listing1.jpg", "/media/listing2.jpg"]
+  },
+  {
+    "id": "2",
+    "title": "City Apartment",
+    "price": 2800000,
+    "location": "Sanganer, Jaipur",
+    "description": "Central 2BHK with balcony.",
+    "media": [
+      "/media/listing4.jpg",
+      "/media/listing5.jpg",
+      "/media/listing3.jpg"
+    ]
+  }
+]

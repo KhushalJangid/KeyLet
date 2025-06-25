@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="absolute bg-white rounded-lg shadow-sm m-4 w-full bottom-0">
+    <footer className="bg-white rounded-lg shadow-sm w-full mt-auto">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link
@@ -13,14 +13,15 @@ export default function Footer() {
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <Image
-              src="/keylet.png"
+              src="/images/keylet.png"
               className="h-8"
               alt="Flowbite Logo"
+               width={160} height={40} style={{objectFit: "contain"}}
             />
           </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
             <li>
-              <Link href="#" className="hover:underline me-4 md:me-6">
+              <Link href="/about" className="hover:underline me-4 md:me-6">
                 About
               </Link>
             </li>
@@ -35,7 +36,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 Contact
               </Link>
             </li>

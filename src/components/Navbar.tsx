@@ -9,13 +9,13 @@ import Link from "next/link";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="block w-full border-gray-200 fixed top-0 m-5">
+    <nav className="block w-full border-gray-200 fixed top-0 m-5 z-1000">
       <div className="mx-5 rounded-lg bg-white max-w-screen-xl flex flex-wrap items-center justify-between px-4 py-3 md:py-0">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
             KeyLet
           </span> */}
-          <Image className="h-10" src="/keylet.png" alt="keylet logo" />
+          <Image className="h-10" width={160} height={40} style={{objectFit: "contain"}} src="/images/keylet.png" alt="keylet logo" />
         </Link>
         <button
           data-collapse-toggle="navbar-default"
@@ -44,7 +44,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/about"
                 className="block py-2 px-3 text-gray-900"
               >
                 About Us
@@ -60,7 +60,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/contact"
                 className="block py-2 px-3 text-gray-900"
               >
                 Contact
