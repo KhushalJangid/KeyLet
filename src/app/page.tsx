@@ -4,7 +4,6 @@ import { ArrowUpRight, Location } from "@carbon/icons-react";
 import { Carousel} from "flowbite-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import ElevatedButtonLink from "@/components/ElevatedButtonLink";
 
 type Listing = {

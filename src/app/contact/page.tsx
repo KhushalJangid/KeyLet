@@ -93,7 +93,6 @@ export default function ContactPage() {
               className="w-full p-2 border border-gray-300 rounded text-black"
             />
             <ElevatedButton
-            onClick={handleSubmit}
             >
               Send <SendAlt size={20} className="ms-2"/>
             </ElevatedButton>
