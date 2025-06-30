@@ -1,5 +1,7 @@
 "use client";
 import BaseComponent from "@/components/BaseComponent";
+import ElevatedButton from "@/components/ElevatedButton";
+import { SendAlt } from "@carbon/icons-react";
 // app/contact/page.tsx
 
 import Image from "next/image";
@@ -90,12 +92,11 @@ export default function ContactPage() {
               rows={5}
               className="w-full p-2 border border-gray-300 rounded text-black"
             />
-            <button
-              type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+            <ElevatedButton
+            onClick={handleSubmit}
             >
-              Send
-            </button>
+              Send <SendAlt size={20} className="ms-2"/>
+            </ElevatedButton>
             {status && <p className="text-sm text-gray-700 mt-2">{status}</p>}
           </form>
         </div>

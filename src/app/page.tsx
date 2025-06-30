@@ -1,10 +1,11 @@
 "use client";
 import BaseComponent from "@/components/BaseComponent";
-import { Location } from "@carbon/icons-react";
+import { ArrowUpRight, Location } from "@carbon/icons-react";
 import { Carousel} from "flowbite-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ElevatedButtonLink from "@/components/ElevatedButtonLink";
 
 type Listing = {
   id: string;
@@ -76,12 +77,12 @@ export default function Home() {
             </p>
             <p className="mb-2">₹{listing.price.toLocaleString()}</p>
             <p className="mb-4 text-sm">{listing.description}</p>
-            <Link
+            <ElevatedButtonLink
               href={`/listings/${listing.id}`}
-              className="block hover:underline mt-2 text-blue-600"
             >
               View Details
-            </Link>
+              <ArrowUpRight size={20} className="ms-2"/>
+            </ElevatedButtonLink>
           </div>
         ))}
       </div>
